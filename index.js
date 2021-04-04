@@ -35,4 +35,12 @@ app.post('/register', async (req, res) => {
     res.json(user);
 });
 
+app.put('/update/:id', (req, res) => {
+    res.json('Im in update');
+});
+
+app.delete('/delete/:id', (req, res) => {
+    res.json('Im in delete');
+});
+
 app.listen(3000);
